@@ -1,0 +1,20 @@
+If songs.db contains the top 100 songs of one listener from 2018, how would you
+characterize their audio aura?
+
+The songs score an average of 0.66 in energy, 0.72 in danceability, and 0.5 in valence. I
+would characterize their audio aura as flexible in mood due to the more neutral valence
+score (purple - able to shift and change), and energetic and fun due to the higher energy
+and danceability scores (orange).
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative
+of the listener. What better ways of calculating this aura would you propose?
+
+I think that taking the average valence to find the mood of the listener might be too
+quick to flatline something more dynamic. I'm inclined to separate songs based on valence
+scores of 0-0.5 and 0.51-1 (this could be further refined by splitting the scores more
+like 0-0.25, etc.), then look at the energy and danceability of group 1 and group 2, to
+get a picture of the character of music listened to that reflects a more "negative" mood
+and that reflects a more "positive" mood. After that, I would take the percent of songs
+that each group represents of the total songs, and the color of each group to create a
+gradient spectrum. For example, if group 1 was green and 30% of the songs and group 2
+was blue and 70% of the songs, the image of the "aura" would be 30% green and 70% blue.
