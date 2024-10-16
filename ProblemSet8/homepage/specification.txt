@@ -14,4 +14,4 @@ I used Bootstrap classes to make the website responsive so it looks nice in desk
 funcitonality such as the form, accordion, and collapse buttons across my website.
 
 I used JavaScript to manage my form "submissions". I also used it to make buttons act as links because the Markdown Validation Service
-doesn't like <button> as a descendent of <a> and vice versa...
+doesn't like <button> as a descendent of <a> and vice versa. 
