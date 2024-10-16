@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Source+Serif+4:opsz,wght@8..60,300&display=swap');
+
+:root {
+    --pink: #d966ab;
+    --purple: #b962bf;
+    --dark-purple: #a352a8;
+    --light-pink: #fbf0f7;
+
+}
+
+body {
+    background-image: linear-gradient(rgb(176, 158, 215), rgb(181, 140, 168));
+    color: #fff;
+    background-color: rgba(217, 102, 171, 0);
+    font-family: 'Source Serif 4', serif;
+    height: 100%;
+}
+
+main {
+
+    max-width: 1400px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'DM Serif Text', serif;
+}
+
+a {
+    font-family: 'Source Serif 4', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+    font-weight: normal;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.text-small {
+    font-size: 14px;
+}
+
+.pink {
+    color: #d966ab;
+}
+
+.purple {
+    color: #b962bf;
+}
+
+.dark-purple {
+    color: #a352a8;
+}
+
+.light-pink {
+    color: #fbf0f7;
+}
+
+.border-pink {
+    border: 1px solid #d966ab;
+}
+
+.border-purple {
+    border: 1px solid #b962bf;
+}
+
+.background-semi-transparent-pink {
+    background-color: rgba(217, 102, 171, 0.5) !important;
+}
+
+.background-semi-transparent-purple {
+    background-color: rgba(185, 98, 191, 0.5);
+}
+
+.background-semi-transparent-white {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#list-ul {
+    border: 1px solid #d966ab;
+}
+
+#list-ul>li {
+    color: #fbf0f7;
+    border-bottom: 1px solid #d966ab;
+    padding: 0.5rem;
+}
+
+button.pink#outline-one,
+button.pink#outline-two {
+    border: 1px solid #d966ab;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 5px;
+}
+
+button.pink#outline-one:hover,
+button.pink#outline-two:hover {
+    background-color: #d966ab;
+    color: #fff;
+}
+
+button.pink#outline-one:hover,
+button.pink#outline-two:hover,
+button a#pink:hover {
+    background-color: #d966ab;
+    color: #fff;
+}
+
+/* Purple button */
+
+button.purple#outline-three,
+button.purple#outline-four {
+    border: 1px solid #b962bf;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 5px;
+}
+
+button.purple#outline-three:hover,
+button.purple#outline-four:hover {
+    background-color: #b962bf;
+    color: #fff;
+}
+
+button.purple#outline-three:hover,
+button.purple#outline-four:hover,
+button a#purple:hover {
+    background-color: #b962bf;
+    color: #fff;
+}
+
+/* Button -> Pink Fill */
+
+button.pink#pink-fill {
+    border: 1px solid #fbf0f7;
+    background-color: rgba(217, 102, 171, 0.5);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 5px;
+}
+
+button.pink#pink-fill:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #d966ab;
+}
+
+button.pink#pink-fill:hover,
+button a#pink:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #d966ab;
+    color: #d966ab;
+}
+
+/* Plain Pink and Purple Buttons */
+
+button.pink-outline {
+    border: 1px solid #d966ab;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 5px;
+}
+
+button.pink-outline:hover{
+    background-color: #d966ab;
+    color: #fff;
+}
+
+/* Purple button */
+
+button.purple-outline {
+    border: 1px solid #b962bf;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 5px;
+}
+
+button.purple-outline:hover {
+    background-color: #b962bf;
+    color: #fff;
+}
+
+.glow {
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #dc95e1, 0 0 40px #dc95e1, 0 0 50px #dc95e1, 0 0 60px #dc95e1, 0 0 70px #dc95e1;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #db7fb6, 0 0 40px #db7fb6, 0 0 50px #db7fb6, 0 0 60px #db7fb6, 0 0 70px #db7fb6, 0 0 80px #db7fb6;
+    }
+}
+
+/* Accordion */
+
+.accordion-styled {
+    color: var(--purple);
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    border: 1px solid #d966ab;
+}
+
+.accordion-styled .accordion-item button {
+    padding: 1rem;
+}
+
+.accordion-styled .accordion-body {
+    padding: 1rem;
+}
+
+.accordion-item h4 {
+    color: var(--pink);
+}
+
+.accordion-item .accordion-button:focus {
+    box-shadow: 0px 0px 5px 1px var(--pink);
+    border: 1px solid var(--light-pink);
+}
+
+
+.accordion-item .show .accordion-body {
+    box-shadow: 0px 0px 5px 1px var(--pink);
+    border: 1px solid var(--light-pink);
+    transition: box-shadow .5s;
+}

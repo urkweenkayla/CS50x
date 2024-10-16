@@ -1,0 +1,17 @@
+Five different CSS selectors
+(1) I used the tag (ex. h1), class (ex. for .pink), (2) ID selectors (ex. #list-ul), (3) those selectors in combination with
+pseudo-classes such as :focus, and :hover (ex. a:hover), (4) I have used the child combinator (ex. #list-ul>li),
+and (5) finally I used descendent selectors (ex. for .accordion-styled .accordion-item button)
+
+Five different CSS properties
+I used the color, background-image, padding, border, and box-shadow properties, amoung a handful of others.
+
+Ten (+) HTML tags
+<p>, <h1>, <h2>, <h3>, <h4>, <i>, <strong>, <a>, <button>, <form>, <input>, <header>, <footer>, <main>, <nav>, <div>, <li>, <ul>
+
+Use of Bootstrap and JavaScript:
+I used Bootstrap classes to make the website responsive so it looks nice in desktop, tablet and mobile. I also used Bootstrap for some
+funcitonality such as the form, accordion, and collapse buttons across my website.
+
+I used JavaScript to manage my form "submissions". I also used it to make buttons act as links because the Markdown Validation Service
+doesn't like <button> as a descendent of <a> and vice versa...

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Hello, Pancakes</title>
+    </head>
+
+    <body class="m-5 d-flex flex-column align-items-center justify-content-center">
+        <header>
+            <h1 class="text-center glow">Hello, Kayla's Pancakes</h1>
+            <h2 class="mt-3 pt-2 text-center purple text-lowercase text-small" style="border-top: solid 1px #a352a8">
+                Hello,
+                Kayla's Navigation</h2>
+            <nav class="d-flex w-100 flex-row align-items-center justify-content-evenly">
+                <a href="index.html" class="dark-purple">Home</a>
+                <a href="about.html" class="dark-purple">About</a>
+                <a href="jokes.html" class="dark-purple">Jokes</a>
+            </nav>
+        </header>
+
+        <main class="vh-75 w-100 m-5 d-flex flex-column align-items-center justify-content-center">
+            <h3 class="pink fs-1">hello, pancakes</h3>
+
+            <div class="m-2 w-100 d-flex flex-md-row flex-column align-items-start justify-content-evenly flex-wrap">
+
+                <!-- Accordion -->
+                <div class="w-100 accordion-styled" id="accordionPancakes" style="max-width: 30rem;">
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Facts About Flapjacks
+                            </button>
+                        </h4>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionPancakes">
+                            <div class="accordion-body">
+                                It's surprisingly difficult to source compelling facts about pancakes. According to my
+                                research (google + reddit), in the US flapjacks are more or less than same as pancakes
+                                whereas in the UK flapjacks are something closer to a granola bar.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Did you know?
+                            </button>
+                        </h4>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionPancakes">
+                            <div class="accordion-body">
+                                Despite the association pancakes have with breakfast, you can actually eat them at any
+                                time of day. Carpe diem.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Lumpy = Fluffy & Yummy
+                            </button>
+                        </h4>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionPancakes">
+                            <div class="accordion-body">
+                                One of the keys to making fluffy and delicious pancakes is by ensuring you don't
+                                overstir the batter, leaving it a little lumpy. I do not know why that is the case. If
+                                you know or find out, please tell me. I'm mildly curious.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe -->
+                <div class="card background-semi-transparent-white border-purple"
+                    style="max-width: 40rem; height: 100%;">
+                    <div class="card-body ">
+                        <h4 class="card-title pink text-center">Pancakes</h4>
+                        <h5 class="mb-3 card-subtitle pink text-center">A <s>Love Story</s> Recipe</h5>
+                        <ul id="list-ul" class="p-0 background-semi-transparent-purple" style="border-radius: 5px;">
+                            <li class="list-group-item">
+                                1. Combine Dry Ingredients: In a large bowl, mix 1 cup of all-purpose flour (can
+                                substitute for gluten-free), 1 tablespoon of sugar (optional), 2 tablespoons of baking
+                                powder, and 1/8 teaspoon of salt.
+                            </li>
+                            <li class="list-group-item">
+                                2. Add Wet Ingredients: To the dry ingredients, add 1 cup of almond milk (or any
+                                plant-based milk) and 2 tablespoons of vegetable oil. Stir until just combined; the
+                                batter should be slightly lumpy. <strong>Do not overmix.</strong>
+                            </li>
+                            <li class="list-group-item">
+                                3. Preheat a Pan: Heat a non-stick pan or griddle over medium heat. Lightly oil the
+                                surface with a bit of vegetable oil (or other oil of your choice).
+                            </li>
+                            <li class="list-group-item">
+                                4. Cook Pancakes: For each pancake, pour about 1/4 cup of batter onto the hot pan.
+                                Cook until bubbles appear on the surface and the edges look set, then flip and cook
+                                until golden brown on the other side.
+                            </li>
+                            <li class="list-group-item">
+                                5. Serve: Serve the pancakes hot with your favorite toppings, such as maple syrup, fresh
+                                fruits, or a sprinkle of cinnamon.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="d-flex flex-column w-100 align-items-center justify-content-between">
+            <div class="d-flex flex-md-row flex-column w-100 align-items-center justify-content-between">
+                <div class="d-flex flex-column align-items-start justify-content-center">
+                    <p class="text-muted text-small">Created by <a target="_blank"
+                            href="https://github.com/urkweenkayla" class="dark-purple">Kayla</a></p>
+                </div>
+                <nav class="d-flex flex-column align-items-end justify-content-center">
+                    <a href="about.html" class="dark-purple">About</a>
+                    <a href="pancakes.html" class="dark-purple">Pancakes</a>
+                    <a href="jokes.html" class="dark-purple">Jokes</a>
+                </nav>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
