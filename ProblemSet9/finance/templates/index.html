@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Portfolio
+{% endblock %}
+
+{% block main %}
+<div>
+    <h1>Portfolio</h1>
+
+    <table class="table table-striped" style="text-align: start;">
+        <thead>
+            <tr>
+                <th scope="col">Stock Symbol</th>
+                <th scope="col">Price</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for purchase in purchases %}
+            <!-- Create row -->
+            <tr>
+                <td>{{purchase.symbol}}</td>
+                <td>{{purchase.price | usd}}</td>
+                <td>{{purchase['SUM(shares)']}}</td>
+                <td>{{purchase.total | usd}}</td>
+            </tr>
+
+
+
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="text-end border-0" colspan="3">Total:</th>
+                <td class="border-0">{{purchases_value | usd}}</td>
+            </tr>
+            <tr>
+                <th class="text-end border-0" colspan="3">Account Balance:</th>
+                <td class="border-0">{{account_balance | usd}}</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</div>
+{% endblock %}

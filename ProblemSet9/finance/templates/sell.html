@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Buy
+{% endblock %}
+
+{% block main %}
+<!-- <script>
+document.addEventListener('DOMContentLoaded', function() {
+    let input = document.getElementById('shares-input');
+    input.addEventListener('input', function() {
+        function isNumeric(string) {
+            return /^[0-9]+$/.test(string)
+        }
+        let submitButton = document.getElementById('submit')
+        let response = input.value
+        if (!isNumeric(response)) {
+            submitButton.disabled = true
+            document.getElementById('input-feedback').innerText = 'Invalid character. Name may only include numbers.'
+        } else {
+            submitButton.disabled = false
+            document.getElementById('input-feedback').innerText = ''
+        }
+    })
+})
+</script> -->
+<h1>Sell</h1>
+<p id="input-feedback" style="color: red;"></p>
+<form action="/sell" method="post">
+    <div class="mb-3">
+        <!-- <label for="symbols">Select Stock</label> -->
+        <select id="symbol" name="symbol">
+            {% for stock in stocks %}
+            {% if loop.previtem is undefined %}
+            <option value="" disabled="" selected="">Symbol</option>
+            {% endif %}
+            <option value="{{stock.symbol}}">{{stock.symbol}}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="shares" placeholder="Shares"
+            type="text" id="shares-input">
+    </div>
+    <button class="btn btn-primary" type="submit" id="submit">Sell Shares</button>
+</form>
+{% endblock %}

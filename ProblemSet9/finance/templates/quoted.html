@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Quoted
+{% endblock %}
+
+{% block main %}
+
+<h2>Quoted</h2>
+
+<table class="table table-striped" style="text-align: start;">
+    <thead>
+        <tr>
+            <th scope="col">Stock Symbol</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{quote.symbol}}</td>
+            <td>{{quote.name}}</td>
+            <td>{{quote.price | usd }}</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<a href="/quote">Get Another Quote</a>
+{% endblock %}
